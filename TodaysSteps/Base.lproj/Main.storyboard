@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TodaysSteps" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FTh-qN-3EB"/>
+                        <viewControllerLayoutGuide type="bottom" id="vJc-Ek-cHo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cLb-HF-hLA">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Steps Today:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gaq-XG-T1I">
+                                <rect key="frame" x="20" y="273" width="147" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="147" id="PKd-Xh-abs"/>
+                                    <constraint firstAttribute="height" constant="29" id="UQQ-PM-aRY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JsV-zv-EwM">
+                                <rect key="frame" x="170" y="274" width="130" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="L4K-5y-qE5"/>
+                                    <constraint firstAttribute="height" constant="29" id="rsR-9K-ITP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="26"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="👞" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6jf-3Y-dRX">
+                                <rect key="frame" x="38" y="167" width="144" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="OJe-VL-zXD"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="130" id="iSq-de-dUM"/>
+                                    <constraint firstAttribute="width" constant="144" id="tun-Tl-bjH"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="144" id="xVd-FO-xQU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="72"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="JsV-zv-EwM" firstAttribute="leading" secondItem="Gaq-XG-T1I" secondAttribute="trailing" constant="3" id="EJU-NX-A4I"/>
+                            <constraint firstItem="Gaq-XG-T1I" firstAttribute="top" secondItem="6jf-3Y-dRX" secondAttribute="bottom" constant="-24" id="Fos-P5-hBI"/>
+                            <constraint firstItem="6jf-3Y-dRX" firstAttribute="top" secondItem="FTh-qN-3EB" secondAttribute="bottom" constant="147" id="KTh-1j-Rc6"/>
+                            <constraint firstItem="6jf-3Y-dRX" firstAttribute="leading" secondItem="cLb-HF-hLA" secondAttribute="leadingMargin" constant="22" id="Wcc-i9-66f"/>
+                            <constraint firstItem="6jf-3Y-dRX" firstAttribute="leading" secondItem="cLb-HF-hLA" secondAttribute="leadingMargin" constant="22" id="dzB-WN-JPg"/>
+                            <constraint firstItem="Gaq-XG-T1I" firstAttribute="leading" secondItem="cLb-HF-hLA" secondAttribute="leading" constant="20" id="j13-QH-hQR"/>
+                            <constraint firstItem="Gaq-XG-T1I" firstAttribute="baseline" secondItem="JsV-zv-EwM" secondAttribute="baseline" id="kuo-Sf-fMl"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="stepCountLabel" destination="JsV-zv-EwM" id="3zh-3D-v04"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="306" y="412"/>
+        </scene>
+    </scenes>
+</document>
